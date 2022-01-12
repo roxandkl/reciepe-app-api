@@ -45,3 +45,12 @@ class ReciepeViewSet(viewsets.Modelviewset):
     def get_queryset(self):
         """Retrive reciepe for authenticated user"""
         return self.queryset.filter(user=self.request.user).order_by('-name')
+
+    
+    def get_serializer_class(self):
+        """Return appropriate serializer class"""
+        if self.action == 'retreive':
+            return serializers.ReciepeDetailSerializer
+        
+        return self.serializer_class
+        
