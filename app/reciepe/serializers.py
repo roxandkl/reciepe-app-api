@@ -25,17 +25,20 @@ class IngredientSerializer(serializers.ModelSerializer):
 class ReciepeSerializer(serializers.ModelSerializer):
     """Serialize a reciepe"""
     ingredients = serializers.PrimaryKeyRelatedField(
-        many = True,
-        queryset = Ingredient.objects.all()
+        many=True,
+        queryset=Ingredient.objects.all()
     )
     tags = serializers.PrimaryKeyRelatedField(
-        many = True,
-        queryset = Tag.objects.all()
+        many=True,
+        queryset=Tag.objects.all()
     )
 
     class Meta:
         model = Reciepe
-        fields = ('id', 'title', 'ingredients', 'tags', 'time_minutes', 'price', 'link')
+        fields = (
+            'id', 'title', 'ingredients', 'tags', 'time_minutes',
+            'price', 'link'
+        )
         read_only_fields = ('id',)
 
 
