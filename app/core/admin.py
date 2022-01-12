@@ -24,6 +24,7 @@ class SiteAdmin(UserAdmin):
 
 admin.site.register(models.User, SiteAdmin)
 admin.site.register(models.Tag)
+admin.site.register(models.Ingredient)
 
 
 
