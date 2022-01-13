@@ -2,10 +2,9 @@
 
 ## Software Description
 Source code of backend REST API for recipe app. It can be cloned in local machine using
-
-'''
+```
 $ git clone https://github.com/roxandkl/reciepe-app-api.git
-''' 
+```
 
 ## Techonlogies Used
 * Python
@@ -17,9 +16,9 @@ $ git clone https://github.com/roxandkl/reciepe-app-api.git
 
 ## Getting started
 Application can be started using 
-'''
+```
 $ docker-compose up
-'''
+```
 The API is then available at http://127.0.0.1:8000.
 
 ## Endpoints
@@ -27,7 +26,7 @@ The API has following endpoints
 
 admin/
 
-api/user/
+api/user/ 
 
 api/reciepe/tags/
 
