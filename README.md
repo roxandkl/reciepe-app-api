@@ -1,12 +1,12 @@
 # recipe-app-api
 
-##Software Description
+## Software Description
 Source code of backend REST API for recipe app. It can be cloned in local machine using
 '''
 $ git clone https://github.com/roxandkl/reciepe-app-api.git
 ''' 
 
-##Techonlogies Used
+## Techonlogies Used
 * Python
 * Django
 * Django-Rest-Framework
@@ -14,14 +14,14 @@ $ git clone https://github.com/roxandkl/reciepe-app-api.git
 * Pillow
 * Postgres
 
-##Getting started
+## Getting started
 Application can be started using 
 '''
 $ docker-compose up
 '''
 The API is then available at http://127.0.0.1:8000.
 
-##Endpoints
+## Endpoints
 The API has following endpoints
 
 admin/
